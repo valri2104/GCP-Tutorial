@@ -19,7 +19,7 @@ jobs:
        DOCKER_USER: ${{secrets.DOCKERHUB_USER}}
        DOCKER_PASS: ${{secrets.DOCKER_PASS}}
       run: |
-       docker login -u $DOCKER_USER -p $DCOKER_PASS
+       docker login -u $DOCKER_USER -p $DOCKER_PASS
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag valri2104/express-randomquotes:latest
 
